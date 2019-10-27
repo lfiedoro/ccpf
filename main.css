@@ -1,0 +1,95 @@
+/* Solarized color scheme */
+:root {
+    --sol-base03:    #002b36;
+    --sol-base02:    #073642;
+    --sol-base01:    #586e75;
+    --sol-base00:    #657b83;
+    --sol-base0:     #839496;
+    --sol-base1:     #93a1a1;
+    --sol-base2:     #eee8d5;
+    --sol-base3:     #fdf6e3;
+    --sol-yellow:    #b58900;
+    --sol-orange:    #cb4b16;
+    --sol-red:       #dc322f;
+    --sol-magenta:   #d33682;
+    --sol-violet:    #6c71c4;
+    --sol-blue:      #268bd2;
+    --sol-cyan:      #2aa198;
+    --sol-green:     #859900;
+}
+
+
+body {
+    background-color: var(--sol-base3);
+    color: var(--sol-base01)
+              font-family: 'Dejavu Sans Mono', sans-serif;
+}
+
+h1 {
+    color: var(--sol-cyan);
+}
+
+.bg-pfolio {
+    background-color: var(--sol-base01);
+}
+
+.personal-projects {
+    text-align: left;
+}
+
+.personal-projects figure {
+    display: block;
+    width: 100%;
+    height: 263px;
+    background-color: var(--sol-base1);
+}
+
+.personal-projects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.personal-travel .travelcard {
+    height: 263px;
+}
+
+.personal-travel .travelcard img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    text-align: center;
+    transition: object-fit .7s ease-out;
+}
+
+.personal-travel .travelcard img:hover {
+    object-fit: cover;
+}
+.personal-travel .travelcard .link
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    color: var(--sol-base3);
+    background-color: var(--sol-base03);
+    left: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.personal-travel .travelcard:hover .link
+{
+    opacity: 0.8;
+}
+
+
+.personal-footer img {
+    display: block;
+    width: 100px;
+    hight: auto;
+}
