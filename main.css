@@ -43,14 +43,23 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    /* height: 263px; */
+    height: 100px;
     background-color: var(--sol-base1);
 }
 
 .personal-projects figure img {
     padding-top: 10px;
     width: 20%;
+}
+
+.personal-projects figure svg {
+    padding-top: 10px;
+    fill: var(--sol-blue);
+    transition: .75s all ease-in-out;
+}
+
+.personal-projects figure:hover svg {
+    fill: var(--sol-red);
 }
 
 .personal-projects figure figcaption {
@@ -106,17 +115,21 @@ h1 {
     justify-content: flex-end;
 }
 
+.personal-contact input, .personal-contact textarea {
+    border-radius: 0px;
+}
+
 .personal-contact button {
     border: none;
     border-radius: 0px;
-  background-color: var(--sol-cyan);
-  color: white;
-  transition-duration: 0.4s;
+    background-color: var(--sol-cyan);
+    color: var(--sol-base2);
+    transition-duration: 0.4s;
 }
 
 .personal-contact button:hover {
-  background-color: var(--sol-blue);
-  color: white;
+    background-color: var(--sol-blue);
+    color: var(--sol-base3);
 }
 
 .personal-footer .cl-text {
