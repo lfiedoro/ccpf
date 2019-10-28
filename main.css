@@ -37,22 +37,32 @@ h1 {
     background-color: var(--sol-base01);
 }
 
-.personal-projects {
-    text-align: left;
-}
-
 .personal-projects figure {
-    display: block;
-    width: 100%;
-    height: 263px;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 263px; */
     background-color: var(--sol-base1);
 }
 
-.personal-projects img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.personal-projects figure img {
+    padding-top: 10px;
     width: 20%;
+}
+
+.personal-projects figure figcaption {
+    padding-bottom: 10px;
+}
+
+.personal-projects a {
+    color: var(--sol-violet);
+}
+
+.personal-projects a:hover {
+    color: var(--sol-orange);
 }
 
 .personal-travel .travelcard {

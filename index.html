@@ -16,13 +16,12 @@
   </head>
   <body>
     <header>
-
       <nav class="navbar navbar-dark bg-pfolio-nav navbar-expand-md">
         <a class="navbar-brand" href="#">
           <img src="icons/terminal-badge.svg" width=30 height=30 alt="" class="d-inline-block align-bottom mr-2">
           <!-- <object data="icons/terminal-badge.svg" width="30" height="30" type="image/svg+xml"></object> -->
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmenu"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mmenu">Menu<span class="navbar-toggler-icon"><!----></span></button>
         <div class="collapse navbar-collapse" id="mmenu">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -41,10 +40,10 @@
         </div>
       </nav>
     </header>
-    <section class="personal-projects">
+    <section class="personal-about">
       <div class="container">
         <header>
-          <h1>My work</h1>
+          <h1>About me</h1>
           <p>Μόνος δ' ἔτι μῦθος ὁδοῖο
             λείπεται ὡς ἔστιν· ταύτῃ δ' ἐπὶ σήματ' ἔασι
             πολλὰ μάλ', ὡς ἀγένητον ἐὸν καὶ ἀνώλεθρόν ἐστιν,
@@ -74,48 +73,63 @@
             οὐδέ τι τῇ μᾶλλον, τό κεν εἴργοι μιν συνέχεσθαι,
             οὐδέ τι χειρότερον, πᾶν δ' ἔμπλεόν ἐστιν ἐόντος.</p>
         </header>
-
+      </div>
+    </section>
+    <section class="personal-projects">
+      <div class="container">
+        <h1>Projects</h1>
         <div class="row">
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/Go.svg" alt="gsmc"></a>
-              <figcaption>Go music select client</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/Go.svg" alt="gsmc">
+                <figcaption>Go music select client</figcaption>
+            </figure></a>
           </div>
 
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/Emacs.svg" alt="emc"></a>
-              <figcaption>Emacs configuration file</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/Emacs.svg" alt="emc">
+                <figcaption>Emacs configuration file</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/MacVim.svg" alt="nvc"></a>
-              <figcaption>Neo Vim configuration file</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/MacVim.svg" alt="nvc">
+                <figcaption>Neo Vim configuration file</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/haskell.svg" alt="xmnc"></a>
-              <figcaption>XMonad setup</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/haskell.svg" alt="xmnc">
+                <figcaption>XMonad setup</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/Config-Haskell.svg" alt="xmbc"></a>
-              <figcaption>XMobar setup</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/Config-Haskell.svg" alt="xmbc">
+                <figcaption>XMobar setup</figcaption>
+              </figure>
+            </a>
           </div>
 
           <div class="col-sm-6 col-md-4">
-            <figure>
-              <a href="#"><img src="icons/Terminal.svg" alt="zsc"></a>
-              <figcaption>zsh configuration file</figcaption>
-            </figure>
+            <a href="#">
+              <figure>
+                <img src="icons/Terminal.svg" alt="zsc">
+                <figcaption>zsh configuration file</figcaption>
+              </figure>
+            </a>
           </div>
         </div>
       </div>
@@ -149,8 +163,6 @@
             <div class="well well-sm">
               <form class="form-horizontal" action="" method="post">
                 <fieldset>
-                  <legend class="text-center">Contact me</legend>
-
                   <div class="form-group">
                     <label class="col-md-3 control-label" for="name">Name</label>
                     <div class="col-md-9">
@@ -183,20 +195,20 @@
           </div>
 	</div>
       </div>
-
-      <section class="personal-footer">
-        <footer class="bg-pfolio-foot">
-          <div class="row no-gutters">
-            <div class="col-6 text-right py-3">
-              <a href="https://www.gnu.org/licenses/copyleft.en.html" class="cl-link">🄯 2019 Copyleft:</a>
-              <p class="cl-text text-left">Lukasz Fiedorowicz</p>
-            </div>
-            <div class="col-6 pr-5 no-fd">
-              <a href="https://stallman.org/facebook.html"><img src="https://stallman.org/no-facebook.png" alt="no f'd"></a>
-            </div>
+    </section>
+    <section class="personal-footer">
+      <footer class="bg-pfolio-foot">
+        <div class="row no-gutters">
+          <div class="col-6 text-right py-3">
+            <a href="https://www.gnu.org/licenses/copyleft.en.html" class="cl-link">🄯 2019 Copyleft:</a>
+            <p class="cl-text text-left">Lukasz Fiedorowicz</p>
           </div>
-        </footer>
-      </section>
+          <div class="col-6 pr-5 no-fd">
+            <a href="https://stallman.org/facebook.html"><img src="https://stallman.org/no-facebook.png" alt="no f'd"></a>
+          </div>
+        </div>
+      </footer>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
