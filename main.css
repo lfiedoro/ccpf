@@ -37,6 +37,13 @@ h1 {
     background-color: var(--sol-base01);
 }
 
+.personal-about .floated img {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    height: 180px;
+}
+
 .personal-projects figure {
     /* display: block; */
     display: flex;
