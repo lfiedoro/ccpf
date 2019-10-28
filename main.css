@@ -18,7 +18,6 @@
     --sol-green:     #859900;
 }
 
-
 body {
     background-color: var(--sol-base3);
     color: var(--sol-base01)
@@ -45,24 +44,60 @@ h1 {
 }
 
 .personal-projects figure {
-    /* display: block; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
     background-color: var(--sol-base1);
+    overflow: hidden;
+    position: relative;
 }
 
-.personal-projects figure img {
-    padding-top: 10px;
-    width: 20%;
+.personal-projects figure::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.personal-projects #go::after {
+    background-image: url(icons/Go.svg);
+}
+
+.personal-projects #emacs::after {
+    background-image: url(icons/Emacs.svg);
+}
+
+.personal-projects #vim::after {
+    background-image: url(icons/MacVim.svg);
+}
+
+.personal-projects #haskell::after {
+    background-image: url(icons/haskell.svg);
+}
+
+.personal-projects #xconfig::after {
+    background-image: url(icons/Config-Haskell.svg);
+}
+
+.personal-projects #shell::after {
+    background-image: url(icons/Terminal.svg);
 }
 
 .personal-projects figure svg {
     padding-top: 10px;
     fill: var(--sol-blue);
     transition: .75s all ease-in-out;
+    z-index: 1;
+
 }
 
 .personal-projects figure:hover svg {
@@ -91,12 +126,15 @@ h1 {
     height: 100%;
     object-fit: none;
     text-align: center;
-    transition: object-fit .7s ease-out;
+    transition: filter .3s ease-out;
+    filter: blur(10px);
 }
 
 .personal-travel .travelcard img:hover {
     object-fit: cover;
+    filter: blur(0px);
 }
+
 .personal-travel .travelcard .link
 {
     position: absolute;
