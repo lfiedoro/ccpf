@@ -155,45 +155,35 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="personal-contact">
       <div class="container">
         <h1>Contact</h1>
-	<div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="well well-sm">
-              <form class="form-horizontal" action="" method="post">
-                <fieldset>
-                  <div class="form-group">
-                    <label class="col-md-3 control-label" for="name">Name</label>
-                    <div class="col-md-9">
-                      <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-                    </div>
-                  </div>
+        <form>
+          <div class="row">
 
-                  <div class="form-group">
-                    <label class="col-md-3 control-label" for="email">Your E-mail</label>
-                    <div class="col-md-9">
-                      <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-                    </div>
-                  </div>
+            <fieldset class="col-md-4">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
 
-                  <div class="form-group">
-                    <label class="col-md-3 control-label" for="message">Your message</label>
-                    <div class="col-md-9">
-                      <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-                    </div>
-                  </div>
+              <div class="form-group">
+                <label for="email">Your E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </fieldset>
 
-                  <div class="form-group">
-                    <div class="col-md-12 text-right">
-                      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
+            <fieldset class="col-md-8">
+              <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </fieldset>
+              <div class="col-12 pb-4 submit-btn">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
           </div>
-	</div>
+        </form>
       </div>
     </section>
     <section class="personal-footer">
@@ -201,9 +191,11 @@
         <div class="row no-gutters">
           <div class="col-6 text-right py-3">
             <a href="https://www.gnu.org/licenses/copyleft.en.html" class="cl-link">🄯 2019 Copyleft:</a>
+          </div>
+          <div class="col-5 text-right py-3 pl-1">
             <p class="cl-text text-left">Lukasz Fiedorowicz</p>
           </div>
-          <div class="col-6 pr-5 no-fd">
+          <div class="col-1 pr-5 no-fd">
             <a href="https://stallman.org/facebook.html"><img src="https://stallman.org/no-facebook.png" alt="no f'd"></a>
           </div>
         </div>
