@@ -1,34 +1,31 @@
 /* Solarized color scheme */
+
 :root {
-    --sol-base03:    #002b36;
-    --sol-base02:    #073642;
-    --sol-base01:    #586e75;
-    --sol-base00:    #657b83;
-    --sol-base0:     #839496;
-    --sol-base1:     #93a1a1;
-    --sol-base2:     #eee8d5;
-    --sol-base3:     #fdf6e3;
-    --sol-yellow:    #b58900;
-    --sol-orange:    #cb4b16;
-    --sol-red:       #dc322f;
-    --sol-magenta:   #d33682;
-    --sol-violet:    #6c71c4;
-    --sol-blue:      #268bd2;
-    --sol-cyan:      #2aa198;
-    --sol-green:     #859900;
+    --sol-base03: #002b36;
+    --sol-base02: #073642;
+    --sol-base01: #586e75;
+    --sol-base00: #657b83;
+    --sol-base0: #839496;
+    --sol-base1: #93a1a1;
+    --sol-base2: #eee8d5;
+    --sol-base3: #fdf6e3;
+    --sol-yellow: #b58900;
+    --sol-orange: #cb4b16;
+    --sol-red: #dc322f;
+    --sol-magenta: #d33682;
+    --sol-violet: #6c71c4;
+    --sol-blue: #268bd2;
+    --sol-cyan: #2aa198;
+    --sol-green: #859900;
 }
 
 body {
-    /* background-color: var(--sol-base3); */
-    /* background-image: linear-gradient(90deg, var(--sol-base01) 2.38%, var(--sol-base3) 2.38%, var(--sol-base3) 50%, var(--sol-base01) 50%, var(--sol-base01) 52.38%, var(--sol-base3) 52.38%, var(--sol-base3) 100%); */
-    /* background-size: 42.00px 42.00px; */
-    background:
-        radial-gradient(circle, transparent 20%, var(--sol-base3) 20%, var(--sol-base3) 80%, transparent 80%, transparent),
+    background: radial-gradient(circle, transparent 20%, var(--sol-base3) 20%, var(--sol-base3) 80%, transparent 80%, transparent),
         radial-gradient(circle, transparent 20%, var(--sol-base3) 20%, var(--sol-base3) 80%, transparent 80%, transparent) 50px 50px,
         linear-gradient(var(--sol-base2) 8px, transparent 8px) 0 -4px,
         linear-gradient(90deg, var(--sol-base2) 8px, transparent 8px) -4px 0;
     background-color: var(--sol-base3);
-    background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 
     color: var(--sol-base03);
     font-family: 'Dejavu Sans Mono', sans-serif;
@@ -69,7 +66,7 @@ h1 {
 }
 
 .personal-projects figure::after {
-    content: "";
+    content: '';
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,27 +80,27 @@ h1 {
 }
 
 .personal-projects #go::after {
-    background-image: url(icons/Go.svg);
+    background-image: url('icons/Go.svg');
 }
 
 .personal-projects #emacs::after {
-    background-image: url(icons/Emacs.svg);
+    background-image: url('icons/Emacs.svg');
 }
 
 .personal-projects #vim::after {
-    background-image: url(icons/MacVim.svg);
+    background-image: url('icons/MacVim.svg');
 }
 
 .personal-projects #haskell::after {
-    background-image: url(icons/haskell.svg);
+    background-image: url('icons/haskell.svg');
 }
 
 .personal-projects #xconfig::after {
-    background-image: url(icons/Config-Haskell.svg);
+    background-image: url('icons/Config-Haskell.svg');
 }
 
 .personal-projects #shell::after {
-    background-image: url(icons/Terminal.svg);
+    background-image: url('icons/Terminal.svg');
 }
 
 .personal-projects figure svg {
