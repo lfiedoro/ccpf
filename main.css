@@ -55,6 +55,8 @@ h1 {
 }
 
 .personal-projects figure {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,6 +169,8 @@ h1 {
 }
 
 .personal-contact .submit-btn {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
 }
@@ -201,6 +205,8 @@ h1 {
 }
 
 .personal-footer .no-fd {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
     align-items: center;
