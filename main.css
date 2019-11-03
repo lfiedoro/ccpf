@@ -47,14 +47,14 @@ h1 {
     background-color: var(--sol-base01);
 }
 
-.personal-about .floated img {
+#personal-about .floated img {
     float: left;
     padding-right: 20px;
     padding-bottom: 20px;
     height: 180px;
 }
 
-.personal-projects figure {
+#personal-projects figure {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -67,7 +67,7 @@ h1 {
     position: relative;
 }
 
-.personal-projects figure::after {
+#personal-projects figure::after {
     content: '';
     background-repeat: no-repeat;
     background-position: center;
@@ -81,31 +81,31 @@ h1 {
     z-index: 0;
 }
 
-.personal-projects #go::after {
+#personal-projects #go::after {
     background-image: url('icons/Go.svg');
 }
 
-.personal-projects #emacs::after {
+#personal-projects #emacs::after {
     background-image: url('icons/Emacs.svg');
 }
 
-.personal-projects #vim::after {
+#personal-projects #vim::after {
     background-image: url('icons/MacVim.svg');
 }
 
-.personal-projects #haskell::after {
+#personal-projects #haskell::after {
     background-image: url('icons/haskell.svg');
 }
 
-.personal-projects #xconfig::after {
+#personal-projects #xconfig::after {
     background-image: url('icons/Config-Haskell.svg');
 }
 
-.personal-projects #shell::after {
+#personal-projects #shell::after {
     background-image: url('icons/Terminal.svg');
 }
 
-.personal-projects figure svg {
+#personal-projects figure svg {
     padding-top: 10px;
     fill: var(--sol-blue);
     transition: .75s all ease-in-out;
@@ -113,27 +113,27 @@ h1 {
 
 }
 
-.personal-projects figure:hover svg {
+#personal-projects figure:hover svg {
     fill: var(--sol-red);
 }
 
-.personal-projects figure figcaption {
+#personal-projects figure figcaption {
     padding-bottom: 10px;
 }
 
-.personal-projects a {
+#personal-projects a {
     color: var(--sol-violet);
 }
 
-.personal-projects a:hover {
+#personal-projects a:hover {
     color: var(--sol-orange);
 }
 
-.personal-travel .travelcard {
+#personal-travel .travelcard {
     height: 263px;
 }
 
-.personal-travel .travelcard img {
+#personal-travel .travelcard img {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -143,12 +143,12 @@ h1 {
     filter: blur(10px);
 }
 
-.personal-travel .travelcard img:hover {
+#personal-travel .travelcard img:hover {
     object-fit: cover;
     filter: blur(0px);
 }
 
-.personal-travel .travelcard .link
+#personal-travel .travelcard .link
 {
     position: absolute;
     display: block;
@@ -163,23 +163,23 @@ h1 {
     transition: opacity 0.5s ease-in-out;
 }
 
-.personal-travel .travelcard:hover .link
+#personal-travel .travelcard:hover .link
 {
     opacity: 0.8;
 }
 
-.personal-contact .submit-btn {
+#personal-contact .submit-btn {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
 }
 
-.personal-contact input, .personal-contact textarea {
+#personal-contact input, #personal-contact textarea {
     border-radius: 0px;
 }
 
-.personal-contact button {
+#personal-contact button {
     border: none;
     border-radius: 0px;
     background-color: var(--sol-cyan);
@@ -187,24 +187,24 @@ h1 {
     transition-duration: 0.4s;
 }
 
-.personal-contact button:hover {
+#personal-contact button:hover {
     background-color: var(--sol-blue);
     color: var(--sol-base3);
 }
 
-.personal-footer .cl-text {
+#personal-footer .cl-text {
     color: var(--sol-base3);
 }
 
-.personal-footer .cl-link {
+#personal-footer .cl-link {
     color: var(--sol-yellow);
 }
 
-.personal-footer .cl-link:hover {
+#personal-footer .cl-link:hover {
     color: var(--sol-orange);
 }
 
-.personal-footer .no-fd {
+#personal-footer .no-fd {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -212,7 +212,7 @@ h1 {
     align-items: center;
 }
 
-.personal-footer .no-fd img {
+#personal-footer .no-fd img {
     width: 100px;
     hight: auto;
 }
